@@ -1,0 +1,396 @@
+
+*** Running vivado
+    with args -log adc.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source adc.tcl
+
+
+
+****** Vivado v2024.1.2 (64-bit)
+  **** SW Build 5164865 on Thu Sep  5 14:37:11 MDT 2024
+  **** IP Build 5164407 on Fri Sep  6 08:18:11 MDT 2024
+  **** SharedData Build 5164864 on Thu Sep 05 13:09:09 MDT 2024
+  **** Start of session at: Wed Oct 30 13:53:28 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source adc.tcl -notrace
+create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 690.785 ; gain = 241.277
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Projects/ERN24004/digilent/vivado-library-master'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+Command: synth_design -top adc -part xc7z007sclg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z007s'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z007s'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 24168
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1161.801 ; gain = 453.586
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-9400] empty statement in sequential block [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc_master_lite_v1_0_M00_AXI.v:66]
+INFO: [Synth 8-6157] synthesizing module 'adc' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc.v:3]
+INFO: [Synth 8-6157] synthesizing module 'adc_master_lite_v1_0_M00_AXI' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc_master_lite_v1_0_M00_AXI.v:3]
+	Parameter C_M_START_DATA_VALUE bound to: -1442840576 - type: integer 
+	Parameter C_M_TARGET_SLAVE_BASE_ADDR bound to: 1073741824 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_TRANSACTIONS_NUM bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'adc_master_lite_v1_0_M00_AXI' (0#1) [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc_master_lite_v1_0_M00_AXI.v:3]
+INFO: [Synth 8-6157] synthesizing module 'adc_slave_lite_v1_0_S00_AXI' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc_slave_lite_v1_0_S00_AXI.v:3]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'adc_slave_lite_v1_0_S00_AXI' (0#1) [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc_slave_lite_v1_0_S00_AXI.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'adc' (0#1) [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc.v:3]
+WARNING: [Synth 8-6014] Unused sequential element write_resp_done_reg was removed.  [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc_slave_lite_v1_0_S00_AXI.v:45]
+WARNING: [Synth 8-6014] Unused sequential element mem_addr_reg was removed.  [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc_slave_lite_v1_0_S00_AXI.v:50]
+WARNING: [Synth 8-3848] Net M_AXI_WDATA in module/entity adc does not have driver. [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc.v:28]
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[4] in module adc_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[3] in module adc_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[2] in module adc_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[1] in module adc_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[0] in module adc_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARADDR[4] in module adc_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARADDR[3] in module adc_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARADDR[2] in module adc_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARADDR[1] in module adc_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARADDR[0] in module adc_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_BRESP[1] in module adc_master_lite_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_BRESP[0] in module adc_master_lite_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_BVALID in module adc_master_lite_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[31] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[30] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[29] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[28] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[27] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[26] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[25] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[24] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[23] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[22] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[21] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[20] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[19] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[18] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[17] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[16] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[15] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[14] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[13] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[12] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[11] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[10] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[9] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[8] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[7] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[6] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[5] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[4] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[3] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[2] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[1] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[0] in module adc is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1272.598 ; gain = 564.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1272.598 ; gain = 564.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z007sclg400-1
+INFO: [Device 21-403] Loading part xc7z007sclg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1272.598 ; gain = 564.383
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'mst_exec_state_reg' in module 'adc_master_lite_v1_0_M00_AXI'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+              INIT_WRITE |                               01 |                               01
+           DATA_TRANSFER |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mst_exec_state_reg' using encoding 'sequential' in module 'adc_master_lite_v1_0_M00_AXI'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1272.598 ; gain = 564.383
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 4     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   3 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 2     
+	   3 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 7     
+	   2 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+INFO: [Device 21-9227] Part: xc7z007sclg400-1 does not have CEAM library.
+Part Resources:
+DSPs: 66 (col length:40)
+BRAMs: 100 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[31] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[30] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[29] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[28] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[27] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[26] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[25] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[24] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[23] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[22] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[21] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[20] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[19] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[18] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[17] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[16] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[15] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[14] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[13] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[12] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[11] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[10] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[9] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[8] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[7] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[6] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[5] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[4] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[3] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[2] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[1] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_WDATA[0] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_BRESP[1] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_BRESP[0] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_BVALID in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[4] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[3] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[2] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[1] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[0] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARADDR[4] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARADDR[3] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARADDR[2] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARADDR[1] in module adc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARADDR[0] in module adc is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:04 ; elapsed = 00:00:17 . Memory (MB): peak = 1461.355 ; gain = 753.141
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:04 ; elapsed = 00:00:17 . Memory (MB): peak = 1461.355 ; gain = 753.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:04 ; elapsed = 00:00:17 . Memory (MB): peak = 1461.355 ; gain = 753.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 1461.355 ; gain = 753.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 1461.355 ; gain = 753.141
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[31] with 1st driver pin 'S_AXI_WDATA_IBUF[31]_inst/O' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc.v:3]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[31] with 2nd driver pin 'master_inst/M_AXI_WDATA_reg[31]/Q' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc_master_lite_v1_0_M00_AXI.v:66]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[30] with 1st driver pin 'S_AXI_WDATA_IBUF[30]_inst/O' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc.v:3]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[30] with 2nd driver pin 'master_inst/M_AXI_WDATA_reg[30]/Q' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc_master_lite_v1_0_M00_AXI.v:66]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[29] with 1st driver pin 'S_AXI_WDATA_IBUF[29]_inst/O' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc.v:3]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[29] with 2nd driver pin 'master_inst/M_AXI_WDATA_reg[29]/Q' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc_master_lite_v1_0_M00_AXI.v:66]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[28] with 1st driver pin 'S_AXI_WDATA_IBUF[28]_inst/O' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc.v:3]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[28] with 2nd driver pin 'master_inst/M_AXI_WDATA_reg[28]/Q' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc_master_lite_v1_0_M00_AXI.v:66]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[27] with 1st driver pin 'S_AXI_WDATA_IBUF[27]_inst/O' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc.v:3]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[27] with 2nd driver pin 'master_inst/M_AXI_WDATA_reg[27]/Q' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc_master_lite_v1_0_M00_AXI.v:66]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[26] with 1st driver pin 'S_AXI_WDATA_IBUF[26]_inst/O' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc.v:3]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[26] with 2nd driver pin 'master_inst/M_AXI_WDATA_reg[26]/Q' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc_master_lite_v1_0_M00_AXI.v:66]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[25] with 1st driver pin 'S_AXI_WDATA_IBUF[25]_inst/O' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc.v:3]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[25] with 2nd driver pin 'master_inst/M_AXI_WDATA_reg[25]/Q' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc_master_lite_v1_0_M00_AXI.v:66]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[24] with 1st driver pin 'S_AXI_WDATA_IBUF[24]_inst/O' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc.v:3]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[24] with 2nd driver pin 'master_inst/M_AXI_WDATA_reg[24]/Q' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc_master_lite_v1_0_M00_AXI.v:66]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[23] with 1st driver pin 'S_AXI_WDATA_IBUF[23]_inst/O' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc.v:3]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[23] with 2nd driver pin 'master_inst/M_AXI_WDATA_reg[23]/Q' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc_master_lite_v1_0_M00_AXI.v:66]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[22] with 1st driver pin 'S_AXI_WDATA_IBUF[22]_inst/O' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc.v:3]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[22] with 2nd driver pin 'master_inst/M_AXI_WDATA_reg[22]/Q' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc_master_lite_v1_0_M00_AXI.v:66]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[21] with 1st driver pin 'S_AXI_WDATA_IBUF[21]_inst/O' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc.v:3]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[21] with 2nd driver pin 'master_inst/M_AXI_WDATA_reg[21]/Q' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc_master_lite_v1_0_M00_AXI.v:66]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[20] with 1st driver pin 'S_AXI_WDATA_IBUF[20]_inst/O' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc.v:3]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[20] with 2nd driver pin 'master_inst/M_AXI_WDATA_reg[20]/Q' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc_master_lite_v1_0_M00_AXI.v:66]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[19] with 1st driver pin 'S_AXI_WDATA_IBUF[19]_inst/O' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc.v:3]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[19] with 2nd driver pin 'master_inst/M_AXI_WDATA_reg[19]/Q' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc_master_lite_v1_0_M00_AXI.v:66]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[18] with 1st driver pin 'S_AXI_WDATA_IBUF[18]_inst/O' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc.v:3]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[18] with 2nd driver pin 'master_inst/M_AXI_WDATA_reg[18]/Q' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc_master_lite_v1_0_M00_AXI.v:66]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[17] with 1st driver pin 'S_AXI_WDATA_IBUF[17]_inst/O' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc.v:3]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[17] with 2nd driver pin 'master_inst/M_AXI_WDATA_reg[17]/Q' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc_master_lite_v1_0_M00_AXI.v:66]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[16] with 1st driver pin 'S_AXI_WDATA_IBUF[16]_inst/O' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc.v:3]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[16] with 2nd driver pin 'master_inst/M_AXI_WDATA_reg[16]/Q' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc_master_lite_v1_0_M00_AXI.v:66]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[15] with 1st driver pin 'S_AXI_WDATA_IBUF[15]_inst/O' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc.v:3]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[15] with 2nd driver pin 'master_inst/M_AXI_WDATA_reg[15]/Q' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc_master_lite_v1_0_M00_AXI.v:66]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[14] with 1st driver pin 'S_AXI_WDATA_IBUF[14]_inst/O' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc.v:3]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[14] with 2nd driver pin 'master_inst/M_AXI_WDATA_reg[14]/Q' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc_master_lite_v1_0_M00_AXI.v:66]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[13] with 1st driver pin 'S_AXI_WDATA_IBUF[13]_inst/O' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc.v:3]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[13] with 2nd driver pin 'master_inst/M_AXI_WDATA_reg[13]/Q' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc_master_lite_v1_0_M00_AXI.v:66]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[12] with 1st driver pin 'S_AXI_WDATA_IBUF[12]_inst/O' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc.v:3]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[12] with 2nd driver pin 'master_inst/M_AXI_WDATA_reg[12]/Q' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc_master_lite_v1_0_M00_AXI.v:66]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[11] with 1st driver pin 'S_AXI_WDATA_IBUF[11]_inst/O' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc.v:3]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[11] with 2nd driver pin 'master_inst/M_AXI_WDATA_reg[11]/Q' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc_master_lite_v1_0_M00_AXI.v:66]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[10] with 1st driver pin 'S_AXI_WDATA_IBUF[10]_inst/O' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc.v:3]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[10] with 2nd driver pin 'master_inst/M_AXI_WDATA_reg[10]/Q' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc_master_lite_v1_0_M00_AXI.v:66]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[9] with 1st driver pin 'S_AXI_WDATA_IBUF[9]_inst/O' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc.v:3]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[9] with 2nd driver pin 'master_inst/M_AXI_WDATA_reg[9]/Q' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc_master_lite_v1_0_M00_AXI.v:66]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[8] with 1st driver pin 'S_AXI_WDATA_IBUF[8]_inst/O' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc.v:3]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[8] with 2nd driver pin 'master_inst/M_AXI_WDATA_reg[8]/Q' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc_master_lite_v1_0_M00_AXI.v:66]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[7] with 1st driver pin 'S_AXI_WDATA_IBUF[7]_inst/O' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc.v:3]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[7] with 2nd driver pin 'master_inst/M_AXI_WDATA_reg[7]/Q' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc_master_lite_v1_0_M00_AXI.v:66]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[6] with 1st driver pin 'S_AXI_WDATA_IBUF[6]_inst/O' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc.v:3]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[6] with 2nd driver pin 'master_inst/M_AXI_WDATA_reg[6]/Q' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc_master_lite_v1_0_M00_AXI.v:66]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[5] with 1st driver pin 'S_AXI_WDATA_IBUF[5]_inst/O' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc.v:3]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[5] with 2nd driver pin 'master_inst/M_AXI_WDATA_reg[5]/Q' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc_master_lite_v1_0_M00_AXI.v:66]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[4] with 1st driver pin 'S_AXI_WDATA_IBUF[4]_inst/O' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc.v:3]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[4] with 2nd driver pin 'master_inst/M_AXI_WDATA_reg[4]/Q' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc_master_lite_v1_0_M00_AXI.v:66]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[3] with 1st driver pin 'S_AXI_WDATA_IBUF[3]_inst/O' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc.v:3]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[3] with 2nd driver pin 'master_inst/M_AXI_WDATA_reg[3]/Q' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc_master_lite_v1_0_M00_AXI.v:66]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[2] with 1st driver pin 'S_AXI_WDATA_IBUF[2]_inst/O' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc.v:3]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[2] with 2nd driver pin 'master_inst/M_AXI_WDATA_reg[2]/Q' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc_master_lite_v1_0_M00_AXI.v:66]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[1] with 1st driver pin 'S_AXI_WDATA_IBUF[1]_inst/O' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc.v:3]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[1] with 2nd driver pin 'master_inst/M_AXI_WDATA_reg[1]/Q' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc_master_lite_v1_0_M00_AXI.v:66]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[0] with 1st driver pin 'S_AXI_WDATA_IBUF[0]_inst/O' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc.v:3]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin S_AXI_WDATA_IBUF[0] with 2nd driver pin 'master_inst/M_AXI_WDATA_reg[0]/Q' [C:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0/hdl/adc_master_lite_v1_0_M00_AXI.v:66]
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|       32|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 1461.355 ; gain = 753.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 1461.355 ; gain = 753.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 1461.355 ; gain = 753.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 1461.355 ; gain = 753.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    20|
+|3     |LUT1   |     3|
+|4     |LUT2   |    51|
+|5     |LUT3   |     1|
+|6     |LUT4   |     4|
+|7     |LUT5   |     6|
+|8     |LUT6   |     9|
+|9     |FDRE   |   168|
+|10    |IBUF   |    46|
+|11    |OBUF   |    78|
+|12    |OBUFT  |    32|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------+-----------------------------+------+
+|      |Instance      |Module                       |Cells |
++------+--------------+-----------------------------+------+
+|1     |top           |                             |   419|
+|2     |  master_inst |adc_master_lite_v1_0_M00_AXI |   183|
+|3     |  slave_inst  |adc_slave_lite_v1_0_S00_AXI  |    79|
++------+--------------+-----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 1461.355 ; gain = 753.141
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 64 critical warnings and 95 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 1461.355 ; gain = 753.141
+Synthesis Optimization Complete : Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 1461.355 ; gain = 753.141
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1472.289 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1574.613 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 6fe1d34b
+INFO: [Common 17-83] Releasing license: Synthesis
+25 Infos, 95 Warnings, 64 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:21 . Memory (MB): peak = 1574.613 ; gain = 879.863
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1574.613 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Projects/ERN24004/IP/ip_repo/adc/edit_adc_v1_0.runs/synth_1/adc.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file adc_utilization_synth.rpt -pb adc_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 30 13:54:12 2024...

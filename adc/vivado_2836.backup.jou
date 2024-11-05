@@ -1,0 +1,72 @@
+#-----------------------------------------------------------
+# Vivado v2024.1.2 (64-bit)
+# SW Build 5164865 on Thu Sep  5 14:37:11 MDT 2024
+# IP Build 5164407 on Fri Sep  6 08:18:11 MDT 2024
+# SharedData Build 5164864 on Thu Sep 05 13:09:09 MDT 2024
+# Start of session at: Wed Oct 30 13:20:12 2024
+# Process ID: 2836
+# Current directory: C:/Projects/ERN24004/IP/ip_repo/adc
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5024 C:\Projects\ERN24004\IP\ip_repo\adc\edit_adc_v1_0.xpr
+# Log file: C:/Projects/ERN24004/IP/ip_repo/adc/vivado.log
+# Journal file: C:/Projects/ERN24004/IP/ip_repo/adc\vivado.jou
+# Running On        :DonGun
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :13th Gen Intel(R) Core(TM) i7-13700K
+# CPU Frequency     :3418 MHz
+# CPU Physical cores:16
+# CPU Logical cores :24
+# Host memory       :34124 MB
+# Swap memory       :2147 MB
+# Total Virtual     :36272 MB
+# Available Virtual :17726 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Projects/ERN24004/IP/ip_repo/adc/edit_adc_v1_0.xpr
+update_compile_order -fileset sources_1
+ipx::open_ipxact_file {C:\Projects\ERN24004\IP\ip_repo\adc\adc_1_0\component.xml}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+ipx::merge_project_changes files [ipx::current_core]
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+set_property is_include true [ipx::get_files hdl/adc_slave_lite_v1_0_S00_AXI.v -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
+set_property is_include true [ipx::get_files hdl/adc_master_lite_v1_0_M00_AXI.v -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
+set_property is_include true [ipx::get_files hdl/adc.v -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
+set_property is_include true [ipx::get_files hdl/adc_slave_lite_v1_0_S00_AXI.v -of_objects [ipx::get_file_groups xilinx_verilogbehavioralsimulation -of_objects [ipx::current_core]]]
+set_property is_include true [ipx::get_files hdl/adc_master_lite_v1_0_M00_AXI.v -of_objects [ipx::get_file_groups xilinx_verilogbehavioralsimulation -of_objects [ipx::current_core]]]
+set_property is_include true [ipx::get_files hdl/adc.v -of_objects [ipx::get_file_groups xilinx_verilogbehavioralsimulation -of_objects [ipx::current_core]]]
+set_property is_include true [ipx::get_files drivers/adc_v1_0/data/adc.mdd -of_objects [ipx::get_file_groups xilinx_softwaredriver -of_objects [ipx::current_core]]]
+set_property is_include true [ipx::get_files drivers/adc_v1_0/data/adc.tcl -of_objects [ipx::get_file_groups xilinx_softwaredriver -of_objects [ipx::current_core]]]
+set_property is_include true [ipx::get_files drivers/adc_v1_0/src/Makefile -of_objects [ipx::get_file_groups xilinx_softwaredriver -of_objects [ipx::current_core]]]
+set_property is_include true [ipx::get_files drivers/adc_v1_0/src/adc.h -of_objects [ipx::get_file_groups xilinx_softwaredriver -of_objects [ipx::current_core]]]
+set_property is_include true [ipx::get_files drivers/adc_v1_0/src/adc.c -of_objects [ipx::get_file_groups xilinx_softwaredriver -of_objects [ipx::current_core]]]
+set_property is_include true [ipx::get_files drivers/adc_v1_0/src/adc_selftest.c -of_objects [ipx::get_file_groups xilinx_softwaredriver -of_objects [ipx::current_core]]]
+set_property is_include true [ipx::get_files xgui/adc_v1_0.tcl -of_objects [ipx::get_file_groups xilinx_xpgui -of_objects [ipx::current_core]]]
+set_property is_include true [ipx::get_files bd/bd.tcl -of_objects [ipx::get_file_groups bd_tcl -of_objects [ipx::current_core]]]
+set_property is_include false [ipx::get_files hdl/adc_slave_lite_v1_0_S00_AXI.v -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
+set_property is_include false [ipx::get_files hdl/adc_master_lite_v1_0_M00_AXI.v -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
+set_property is_include false [ipx::get_files hdl/adc.v -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
+set_property is_include false [ipx::get_files hdl/adc_slave_lite_v1_0_S00_AXI.v -of_objects [ipx::get_file_groups xilinx_verilogbehavioralsimulation -of_objects [ipx::current_core]]]
+set_property is_include false [ipx::get_files hdl/adc_master_lite_v1_0_M00_AXI.v -of_objects [ipx::get_file_groups xilinx_verilogbehavioralsimulation -of_objects [ipx::current_core]]]
+set_property is_include false [ipx::get_files hdl/adc.v -of_objects [ipx::get_file_groups xilinx_verilogbehavioralsimulation -of_objects [ipx::current_core]]]
+set_property is_include false [ipx::get_files drivers/adc_v1_0/data/adc.mdd -of_objects [ipx::get_file_groups xilinx_softwaredriver -of_objects [ipx::current_core]]]
+set_property is_include false [ipx::get_files drivers/adc_v1_0/data/adc.tcl -of_objects [ipx::get_file_groups xilinx_softwaredriver -of_objects [ipx::current_core]]]
+set_property is_include false [ipx::get_files drivers/adc_v1_0/src/Makefile -of_objects [ipx::get_file_groups xilinx_softwaredriver -of_objects [ipx::current_core]]]
+set_property is_include false [ipx::get_files drivers/adc_v1_0/src/adc.h -of_objects [ipx::get_file_groups xilinx_softwaredriver -of_objects [ipx::current_core]]]
+set_property is_include false [ipx::get_files drivers/adc_v1_0/src/adc.c -of_objects [ipx::get_file_groups xilinx_softwaredriver -of_objects [ipx::current_core]]]
+set_property is_include false [ipx::get_files drivers/adc_v1_0/src/adc_selftest.c -of_objects [ipx::get_file_groups xilinx_softwaredriver -of_objects [ipx::current_core]]]
+set_property is_include false [ipx::get_files xgui/adc_v1_0.tcl -of_objects [ipx::get_file_groups xilinx_xpgui -of_objects [ipx::current_core]]]
+set_property is_include false [ipx::get_files bd/bd.tcl -of_objects [ipx::get_file_groups bd_tcl -of_objects [ipx::current_core]]]
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0

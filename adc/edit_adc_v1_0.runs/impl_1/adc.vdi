@@ -1,0 +1,96 @@
+#-----------------------------------------------------------
+# Vivado v2024.1.2 (64-bit)
+# SW Build 5164865 on Thu Sep  5 14:37:11 MDT 2024
+# IP Build 5164407 on Fri Sep  6 08:18:11 MDT 2024
+# SharedData Build 5164864 on Thu Sep 05 13:09:09 MDT 2024
+# Start of session at: Wed Oct 30 13:54:26 2024
+# Process ID: 18860
+# Current directory: C:/Projects/ERN24004/IP/ip_repo/adc/edit_adc_v1_0.runs/impl_1
+# Command line: vivado.exe -log adc.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source adc.tcl -notrace
+# Log file: C:/Projects/ERN24004/IP/ip_repo/adc/edit_adc_v1_0.runs/impl_1/adc.vdi
+# Journal file: C:/Projects/ERN24004/IP/ip_repo/adc/edit_adc_v1_0.runs/impl_1\vivado.jou
+# Running On        :DonGun
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :13th Gen Intel(R) Core(TM) i7-13700K
+# CPU Frequency     :3418 MHz
+# CPU Physical cores:16
+# CPU Logical cores :24
+# Host memory       :34124 MB
+# Swap memory       :2147 MB
+# Total Virtual     :36272 MB
+# Available Virtual :14984 MB
+#-----------------------------------------------------------
+source adc.tcl -notrace
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 690.504 ; gain = 236.895
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Projects/ERN24004/IP/ip_repo/adc/adc_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Projects/ERN24004/digilent/vivado-library-master'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+Command: link_design -top adc -part xc7z007sclg400-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z007sclg400-1
+INFO: [Device 21-9227] Part: xc7z007sclg400-1 does not have CEAM library.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1115.062 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.1.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1204.434 ; gain = 0.211
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1205.129 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+11 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z007s'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z007s'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net master_inst/Q[0] has multiple drivers: S_AXI_WDATA_IBUF[0]_inst/O, and master_inst/M_AXI_WDATA_reg[0]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net master_inst/Q[10] has multiple drivers: S_AXI_WDATA_IBUF[10]_inst/O, and master_inst/M_AXI_WDATA_reg[10]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net master_inst/Q[11] has multiple drivers: S_AXI_WDATA_IBUF[11]_inst/O, and master_inst/M_AXI_WDATA_reg[11]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net master_inst/Q[12] has multiple drivers: S_AXI_WDATA_IBUF[12]_inst/O, and master_inst/M_AXI_WDATA_reg[12]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net master_inst/Q[13] has multiple drivers: S_AXI_WDATA_IBUF[13]_inst/O, and master_inst/M_AXI_WDATA_reg[13]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net master_inst/Q[14] has multiple drivers: S_AXI_WDATA_IBUF[14]_inst/O, and master_inst/M_AXI_WDATA_reg[14]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net master_inst/Q[15] has multiple drivers: S_AXI_WDATA_IBUF[15]_inst/O, and master_inst/M_AXI_WDATA_reg[15]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net master_inst/Q[16] has multiple drivers: S_AXI_WDATA_IBUF[16]_inst/O, and master_inst/M_AXI_WDATA_reg[16]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net master_inst/Q[17] has multiple drivers: S_AXI_WDATA_IBUF[17]_inst/O, and master_inst/M_AXI_WDATA_reg[17]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net master_inst/Q[18] has multiple drivers: S_AXI_WDATA_IBUF[18]_inst/O, and master_inst/M_AXI_WDATA_reg[18]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net master_inst/Q[19] has multiple drivers: S_AXI_WDATA_IBUF[19]_inst/O, and master_inst/M_AXI_WDATA_reg[19]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net master_inst/Q[1] has multiple drivers: S_AXI_WDATA_IBUF[1]_inst/O, and master_inst/M_AXI_WDATA_reg[1]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net master_inst/Q[20] has multiple drivers: S_AXI_WDATA_IBUF[20]_inst/O, and master_inst/M_AXI_WDATA_reg[20]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net master_inst/Q[21] has multiple drivers: S_AXI_WDATA_IBUF[21]_inst/O, and master_inst/M_AXI_WDATA_reg[21]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net master_inst/Q[22] has multiple drivers: S_AXI_WDATA_IBUF[22]_inst/O, and master_inst/M_AXI_WDATA_reg[22]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net master_inst/Q[23] has multiple drivers: S_AXI_WDATA_IBUF[23]_inst/O, and master_inst/M_AXI_WDATA_reg[23]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net master_inst/Q[24] has multiple drivers: S_AXI_WDATA_IBUF[24]_inst/O, and master_inst/M_AXI_WDATA_reg[24]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net master_inst/Q[25] has multiple drivers: S_AXI_WDATA_IBUF[25]_inst/O, and master_inst/M_AXI_WDATA_reg[25]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net master_inst/Q[26] has multiple drivers: S_AXI_WDATA_IBUF[26]_inst/O, and master_inst/M_AXI_WDATA_reg[26]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net master_inst/Q[27] has multiple drivers: S_AXI_WDATA_IBUF[27]_inst/O, and master_inst/M_AXI_WDATA_reg[27]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net master_inst/Q[28] has multiple drivers: S_AXI_WDATA_IBUF[28]_inst/O, and master_inst/M_AXI_WDATA_reg[28]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net master_inst/Q[29] has multiple drivers: S_AXI_WDATA_IBUF[29]_inst/O, and master_inst/M_AXI_WDATA_reg[29]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net master_inst/Q[2] has multiple drivers: S_AXI_WDATA_IBUF[2]_inst/O, and master_inst/M_AXI_WDATA_reg[2]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net master_inst/Q[30] has multiple drivers: S_AXI_WDATA_IBUF[30]_inst/O, and master_inst/M_AXI_WDATA_reg[30]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net master_inst/Q[31] has multiple drivers: S_AXI_WDATA_IBUF[31]_inst/O, and master_inst/M_AXI_WDATA_reg[31]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net master_inst/Q[3] has multiple drivers: S_AXI_WDATA_IBUF[3]_inst/O, and master_inst/M_AXI_WDATA_reg[3]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net master_inst/Q[4] has multiple drivers: S_AXI_WDATA_IBUF[4]_inst/O, and master_inst/M_AXI_WDATA_reg[4]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net master_inst/Q[5] has multiple drivers: S_AXI_WDATA_IBUF[5]_inst/O, and master_inst/M_AXI_WDATA_reg[5]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net master_inst/Q[6] has multiple drivers: S_AXI_WDATA_IBUF[6]_inst/O, and master_inst/M_AXI_WDATA_reg[6]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net master_inst/Q[7] has multiple drivers: S_AXI_WDATA_IBUF[7]_inst/O, and master_inst/M_AXI_WDATA_reg[7]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net master_inst/Q[8] has multiple drivers: S_AXI_WDATA_IBUF[8]_inst/O, and master_inst/M_AXI_WDATA_reg[8]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net master_inst/Q[9] has multiple drivers: S_AXI_WDATA_IBUF[9]_inst/O, and master_inst/M_AXI_WDATA_reg[9]/Q.
+INFO: [Project 1-461] DRC finished with 32 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.615 . Memory (MB): peak = 1264.379 ; gain = 30.379
+INFO: [Common 17-83] Releasing license: Implementation
+16 Infos, 0 Warnings, 0 Critical Warnings and 33 Errors encountered.
+opt_design failed
+ERROR: [Common 17-39] 'opt_design' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 30 13:54:48 2024...

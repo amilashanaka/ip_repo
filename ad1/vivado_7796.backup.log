@@ -1,0 +1,59 @@
+#-----------------------------------------------------------
+# Vivado v2024.1.2 (64-bit)
+# SW Build 5164865 on Thu Sep  5 14:37:11 MDT 2024
+# IP Build 5164407 on Fri Sep  6 08:18:11 MDT 2024
+# SharedData Build 5164864 on Thu Sep 05 13:09:09 MDT 2024
+# Start of session at: Wed Oct 30 16:26:16 2024
+# Process ID: 7796
+# Current directory: C:/Projects/ERN24004/IP/ip_repo/ad1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent25056 C:\Projects\ERN24004\IP\ip_repo\ad1\edit_ad1_v1_0.xpr
+# Log file: C:/Projects/ERN24004/IP/ip_repo/ad1/vivado.log
+# Journal file: C:/Projects/ERN24004/IP/ip_repo/ad1\vivado.jou
+# Running On        :DonGun
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :13th Gen Intel(R) Core(TM) i7-13700K
+# CPU Frequency     :3418 MHz
+# CPU Physical cores:16
+# CPU Logical cores :24
+# Host memory       :34124 MB
+# Swap memory       :2147 MB
+# Total Virtual     :36272 MB
+# Available Virtual :19716 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Projects/ERN24004/IP/ip_repo/ad1/edit_ad1_v1_0.xpr
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Projects/ERN24004/IP/ip_repo/ad1/edit_ad1_v1_0.gen/sources_1'.
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Projects/ERN24004/IP/ip_repo/ad1/ad1_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Projects/ERN24004/digilent/vivado-library-master'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 1782.926 ; gain = 551.496
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+WARNING: [Vivado 12-7122] Auto Incremental Compile:: No reference checkpoint was found in run synth_1. Auto-incremental flow will not be run, the standard flow will be run instead.
+[Wed Oct 30 16:27:15 2024] Launched synth_1...
+Run output will be captured here: C:/Projects/ERN24004/IP/ip_repo/ad1/edit_ad1_v1_0.runs/synth_1/runme.log
+add_files -fileset constrs_1 -norecurse C:/Projects/ERN24004/IP/ip_repo/ad1/edit_ad1_v1_0.srcs/pmod_bridge_0.xci
+ERROR: [IP_Flow 19-1038] The given fileset 'constrs_1' isn't a valid fileset to register the IP source to.
+WARNING: [Vivado 12-13650] The IP file 'C:/Projects/ERN24004/IP/ip_repo/ad1/edit_ad1_v1_0.srcs/pmod_bridge_0.xci' has been moved from its original location, as a result the outputs for this IP will now be generated in ''. Alternatively a copy of the IP can be imported into the project using one of the 'import_ip' or 'import_files' commands.
+ERROR: [Common 17-39] 'add_files' failed due to earlier errors.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Projects\ERN24004\IP\ip_repo\ad1\ad1_1_0\hdl\ad1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Projects\ERN24004\IP\ip_repo\ad1\ad1_1_0\hdl\ad1_slave_lite_v1_0_S00_AXI.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Projects\ERN24004\IP\ip_repo\ad1\ad1_1_0\hdl\ad1_slave_lite_v1_0_S00_AXI.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Projects\ERN24004\IP\ip_repo\ad1\ad1_1_0\hdl\ad1_slave_lite_v1_0_S00_AXI.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 30 16:30:33 2024...

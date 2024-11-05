@@ -11,7 +11,9 @@
 		// Width of S_AXI data bus
 		parameter integer C_S_AXI_DATA_WIDTH	= 32,
 		// Width of S_AXI address bus
-		parameter integer C_S_AXI_ADDR_WIDTH	= 4
+		parameter integer C_S_AXI_ADDR_WIDTH	= 4 
+		
+
 	)
 	(
 		// Users to add ports here
@@ -91,6 +93,7 @@
 	reg  	axi_arready;
 	reg [1 : 0] 	axi_rresp;
 	reg  	axi_rvalid;
+	reg [C_S_AXI_DATA_WIDTH-1 : 0] axi_rdata;
 
 	// Example-specific design signals
 	// local parameter for addressing 32 bit / 64 bit C_S_AXI_DATA_WIDTH
@@ -118,11 +121,19 @@
 	assign S_AXI_ARREADY	= axi_arready;
 	assign S_AXI_RRESP	= axi_rresp;
 	assign S_AXI_RVALID	= axi_rvalid;
+	assign S_AXI_RDATA   = axi_rdata;
 	 //state machine varibles 
 	 reg [1:0] state_write;
 	 reg [1:0] state_read;
 	 //State machine local parameters
 	 localparam Idle = 2'b00,Raddr = 2'b10,Rdata = 2'b11 ,Waddr = 2'b10,Wdata = 2'b11;
+	    // Hardcoded dummy data
+    localparam [C_S_AXI_DATA_WIDTH-1 : 0] DUMMY_DATA_0 = 32'hDEADBEEF;
+    localparam [C_S_AXI_DATA_WIDTH-1 : 0] DUMMY_DATA_1 = 32'h12345678;
+    localparam [C_S_AXI_DATA_WIDTH-1 : 0] DUMMY_DATA_2 = 32'hCAFEBABE;
+    localparam [C_S_AXI_DATA_WIDTH-1 : 0] DUMMY_DATA_3 = 32'h0BADF00D;
+    
+ 
 	// Implement Write state machine
 	// Outstanding write transactions are not supported by the slave i.e., master should assert bready to receive response on or before it starts sending the new transaction
 	always @(posedge S_AXI_ACLK)                                 
@@ -242,7 +253,7 @@
 	                slv_reg3[(byte_index*8) +: 8] <= S_AXI_WDATA[(byte_index*8) +: 8];
 	              end  
 	          default : begin
-	                      slv_reg0 <= slv_reg0;
+	                      slv_reg0 <= slv_reg0; 
 	                      slv_reg1 <= slv_reg1;
 	                      slv_reg2 <= slv_reg2;
 	                      slv_reg3 <= slv_reg3;
@@ -278,8 +289,9 @@
 	            Raddr:        //At this state, slave is ready to receive address along with corresponding control signals                                       
 	              begin                                       
 	                if (S_AXI_ARVALID && S_AXI_ARREADY)                                       
-	                  begin                                       
-	                    state_read <= Rdata;                                       
+	                  begin
+                                       
+	                    state_read <= DUMMY_DATA_0;// Rdata;                                       
 	                    axi_araddr <= S_AXI_ARADDR;                                       
 	                    axi_rvalid <= 1'b1;                                       
 	                    axi_arready <= 1'b0;                                       
